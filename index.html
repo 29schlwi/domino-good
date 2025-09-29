@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+         <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+
+    </head>
+    <body>
+        <a-scene physics="debug:true; gravity: -5">
+      <a-plane static-body
+      width="30"
+      height="30"
+      position="0 0 4"
+      rotation="-90 0 0"
+      color="tan">
+          
+          </a-plane>
+          <a-sphere dynamic-body
+          color="blue"    
+              radius="2"
+              position="5 25 -10">
+          </a-sphere>
+        <a-box static-body
+            position="6 3 -10"
+            rotation="-45 0 0"
+            height="20"
+            width="10"
+            color="red"
+            
+        ></a-box>
+         
+          <a-box dynamic-body
+            position="6 3 -5"
+            rotation="0 0 0"
+            height="5"
+            width="3"
+            color="red"
+            
+        ></a-box>
+         <a-box dynamic-body
+            position="6 3 -2"
+            rotation="0 0 0"
+            height="5"
+            width="3"
+            color="red"
+            
+        ></a-box>
+         <a-box dynamic-body
+            position="6 3 1"
+            rotation="0 0 0"
+            height="5"
+            width="3"
+            color="red"
+            
+        ></a-box>
+        <a-sphere dynamic-body
+        radius="1"
+        position="6 3 3"
+        color="pink"
+        ></a-sphere>
+        <a-torus 
+        radius="2"
+           position="6.5 1.5 10"
+           color="green"
+           ></a-torus>
+        
+        </a-scene>
+    </body>
+</html>
